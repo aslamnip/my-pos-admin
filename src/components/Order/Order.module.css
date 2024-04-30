@@ -1,0 +1,100 @@
+/* Add this CSS to your existing stylesheet or create a new one */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.select {
+    border: none;
+    background: none;
+    outline: none;
+    width: 90%;
+}
+.cutomRow:hover .select {
+    background: rgb(0, 70, 110);
+    color: white;
+}
+.order_link{
+    color: red;
+    text-decoration: none;
+}
+
+.order_link:visited{
+    color: rgb(0, 0, 255);
+}
+
+.cutomRow,
+.cutomRowHeader {
+    display: grid;
+    grid-template-columns:5% 8% 14% 11% 20% 12% 15% auto;
+    grid-gap: 1px;
+    margin: 15px 0;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.327);
+    background: rgb(255, 255, 255);
+    border-radius: 0px;
+
+}
+
+.cutomHeader {
+    background: rgb(1, 70, 110);
+    color: white;
+    font-weight: bold;
+}
+
+.cutomRow:hover {
+
+    background:  rgb(1, 70, 110);
+    color: white;
+}
+
+.cutomRow:hover a:hover,
+.cutomRow:hover a {
+    color: white;
+}
+
+.cutomRow:hover .cutomRowData {
+    border: 0.5px solid rgb(255, 255, 255);
+
+}
+.cutomRowData{
+    word-wrap: break-word;
+}
+.cutomRowData,
+.cutomHeader {
+    padding: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.172);
+
+}
+
+
+.customform{
+    outline: none;
+    border-radius: 5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.153);
+    padding: 3px;
+}
+
+.customform:focus {
+    border: 0.5px solid rgba(0, 128, 0, 0.153);
+}
+
+
+@media screen and (max-width : 768px) {
+    .CustomTable2nd {
+        overflow: scroll;
+        padding: 5px;
+    }
+
+    .cutomRow,
+    .cutomRowHeader {
+        grid-template-columns:50px 100px 150px 150px 250px 150px 200px 150px;
+        width: 1200px;
+
+    }
+
+    .customform{
+       margin: 5px 0;
+    }
+}

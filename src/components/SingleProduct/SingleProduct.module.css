@@ -1,0 +1,12 @@
+.ImagesSection {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.prodctsImages{
+    border: 0.5px solid rgba(0, 0, 0, 0.214);
+    margin-top: 8px;
+    margin-left: 5px;
+    padding: 5px;
+}

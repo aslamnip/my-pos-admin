@@ -1,0 +1,141 @@
+.navMian {
+    display: block;
+    background: black;
+    height: 100vh;
+    width: 250px;
+    padding: 10px;
+    position: fixed;
+    z-index: 3;
+    overflow-y: scroll;
+}
+
+.navMian h2 {
+    color: white;
+}
+
+.NavRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navList {
+    display: block;
+    
+}
+
+.navList ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    
+}
+
+.navList li {
+    padding: 7px;
+    border: 0.5px solid rgba(255, 255, 255, 0.273);
+    margin: 5px 0;
+    
+}
+.navList li:hover {
+  background-color: rgb(1, 70, 110);
+}
+.navList a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navList a:hover {
+    color: whitesmoke;
+}
+
+.btn-logout {
+    margin-top: 70%;
+    bottom: 0;
+    
+}
+
+.iconDs{
+    font-size: 14px;
+    width: 20px;
+}
+
+.btn-logout button {
+    padding: 5px;
+    background: none;
+    color: white;
+    outline: none;
+    width: 100px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.bodyLayout {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 15px;
+    margin-left: 250px;
+}
+
+.mobileNav {
+    display: none;
+}
+
+.hideClose {
+    display: none;
+}
+
+@media screen and (max-width : 1200px) {
+
+    .navMian {
+
+        width: 200px;
+    }
+
+    .bodyLayout {
+        padding: 8px;
+        margin-left: 200px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .navMian {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+    }
+
+    .bodyLayout {
+        padding: 0px;
+        margin-left: 0px;
+    }
+
+    .NavRow {
+        display: block;
+        justify-content: left;
+    }
+
+    .showMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100vw;
+        z-index: 2;
+    }
+
+    .showClose {
+        margin-left: auto;
+        color: red;
+        padding: 0 15px 0 0;
+        outline: none;
+        border: none;
+        background: none;
+        font-size: 20px;
+    }
+}

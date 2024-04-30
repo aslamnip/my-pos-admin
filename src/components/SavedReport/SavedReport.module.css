@@ -1,0 +1,28 @@
+.dateTitle {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.anlyzeRow {
+    width: 30%;
+    font-family: monospace;
+    margin: 0 auto;
+
+}
+
+.anlyzeRow div {
+    border-bottom: 1px dotted rgba(0, 98, 128, 0.313);
+    padding-top: 12px;
+    justify-content: space-between;
+}
+
+
+.inputCl {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    width: 100px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.14);
+}

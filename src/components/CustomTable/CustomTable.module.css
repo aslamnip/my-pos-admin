@@ -1,0 +1,60 @@
+
+.cutomRow,
+.cutomRowHeader {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    grid-gap: 1px;
+    margin: 15px 0;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.327);
+    background: rgb(255, 255, 255);
+    
+   
+}
+.cutomHeader {
+    background: rgb(61, 61, 61);
+    color: white;
+
+}
+.cutomRow:hover {
+
+    background: rgb(69, 69, 69);
+    color: white;
+}
+.cutomRow:hover a:hover, .cutomRow:hover a{
+    color: white;
+}
+
+.cutomRow:hover .cutomRowData {
+    border: 0.5px solid rgb(255, 255, 255);
+
+}
+
+.cutomRowData,
+.cutomHeader {
+    padding: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.172);
+
+}
+/* .cutomHeader:last-child, .cutomRowData:last-child{
+    border-radius:  0px 20px 20px 0;
+}
+.cutomHeader:first-child, .cutomRowData:first-child{
+    border-radius:  20px  0 0 20px ;
+} */
+
+.cutomHeader {
+    font-weight: bold;
+}
+
+@media screen and (max-width : 768px) {
+    .CustomTable2nd {
+        overflow: scroll;
+    }
+
+    .cutomRow,
+    .cutomRowHeader {
+        grid-template-columns: 500px 130px 130px;
+        width: 768px;
+
+    }
+}

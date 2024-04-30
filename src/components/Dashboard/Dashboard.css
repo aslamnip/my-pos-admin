@@ -1,0 +1,63 @@
+.welcome {
+    text-align: center;
+    margin-top: 30vh;
+}
+.dahshboardMain {
+    background: rgba(233, 233, 233, 0.987);
+    margin-top: -20px;
+    padding-top: 50px;
+    margin-left: -20px;
+    padding-left: 30px;
+    min-height: 100vh;
+    padding-bottom: 30px;
+}
+.subs {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.piechart{
+    width: 350px;
+    height: 350px;
+    margin: 10px auto;
+}
+
+.dashboardData{
+    background: rgb(255, 255, 255);
+    border: 0.5px solid rgba(79, 79, 79, 0.358);
+    width: 300px ;
+    text-align: center;
+    padding:  10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.dashboardData p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.lengthCount{
+    background-color: rgb(0, 135, 90);
+    color: white;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.orderCountlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    gap: 20px;
+}
+
+@media screen and (max-width : 360px) {
+    .piechart{
+        width: 300px;
+        height: 300px;
+        margin: 10px auto;
+    }
+}

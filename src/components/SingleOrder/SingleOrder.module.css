@@ -1,0 +1,17 @@
+
+.orderAddress {
+    word-wrap: break-word;
+}
+.image_side_order img{
+   width: 91%;
+}
+.mainSgOrder {
+    padding-left: 8px;
+}
+
+@media screen and (max-width:769px) {
+    .mainSgOrder {
+        padding-left: 8px;
+    }
+}
+
