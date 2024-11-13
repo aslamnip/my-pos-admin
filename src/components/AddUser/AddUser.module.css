@@ -1,0 +1,48 @@
+.formMainDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+    padding: 50px;
+}
+
+
+.fromControl {
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgba(219, 219, 219, 0.18) ; */
+    outline: none;
+    padding: 15px;
+    width: 90%;
+    border: 0.5px solid rgba(151, 151, 151, 0.382);
+    border-radius: 5px;
+}
+
+.formMainDiv label {
+    display: block;
+    margin: 10px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.submitButton {
+    background: rgb(74, 131, 255);
+    outline: none;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    width: 300px;
+    font-size: 18px;
+    box-shadow: 0 0 10px 0 rgb(0, 15, 65);
+
+}
+
+
+.fromControl:focus {
+    box-shadow: 0 0 5px 0 rgba(41, 41, 41, 0.544);
+}

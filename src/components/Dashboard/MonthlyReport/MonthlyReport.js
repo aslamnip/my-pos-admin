@@ -120,8 +120,8 @@ function MonthlyReport(props) {
 
                         <div>
                             <div className='d-flex'>
-                                <div className='d-flex'>
-                                    <div>
+                                <div className='d-md-flex'>
+                                    <div className='col-md-6'>
                                         <div>
                                             <div className={styles.dateTitle}><p>Start Date (dd/mm/yyyy)</p></div>
                                         </div>
@@ -135,7 +135,7 @@ function MonthlyReport(props) {
                                             />
                                         </div>
                                     </div>
-                                    <div className='ms-5'>
+                                    <div className='ms-md-5 col-md-6'>
                                         <div>
                                             <div className={styles.dateTitle}><p>End Date (dd/mm/yyyy)</p></div>
                                         </div>
@@ -161,7 +161,7 @@ function MonthlyReport(props) {
                                 <h5>Showing Order Data of {startDate.toDateString()} to {endDate.toDateString()}</h5>
 
                                 <div className='row'>
-                                    <div className='col-md-6'>
+                                    <div className='col-md-6  mb-5'>
                                         <div className={styles.anlyzeRow} >
                                             <div className='d-flex'> <p>Orders</p> <p><b>{selectedOrdersRange.length}</b></p></div>
                                             <div className='d-flex'> <p>Void</p> <p><b>{totalCancellOrders}</b></p></div>

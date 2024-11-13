@@ -17,11 +17,13 @@ function SingleCategory() {
     const [showEidt, setShowEdit] = useState(false)
     const [categoryName, setCategoryName] = useState('')
     useEffect(() => {
-        fetch(`${fetchUrl}/api/categories/${slug}/`)
+        fetch(`${fetchUrl}/api/categories/update/${slug}/`, {
+            headers: { "Authorization": `Bearer ${accessToken}` }
+        })
             .then(res => res.json())
             .then(data => setCategory(data))
             .then(setCategoryName(category.name))
-    }, [category.name, slug])
+    }, [accessToken, category.name, slug])
 
     const handleEditCategory = (e) => {
         setCategoryName(e.target.value)

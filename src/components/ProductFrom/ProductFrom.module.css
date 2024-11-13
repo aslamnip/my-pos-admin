@@ -1,7 +1,9 @@
 .formMaoin {
-    width: 50% ;
-    margin: 0 auto;
+    width: 95% ;
+    margin: 70px auto;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .formMaoin {

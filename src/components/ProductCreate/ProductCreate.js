@@ -10,7 +10,7 @@ function ProductCreate() {
                     <SideNav />
                 </div>
                 <div className='bodyLayout '>
-                    <ProductFrom method = "POST" postUrl = 'products/create/' />
+                    <ProductFrom method = "POST" postUrl = 'product/create/' />
                 </div>
             </div>
         </div>

@@ -9,16 +9,11 @@ import SideNav from '../SideNav/SideNav';
 // import styles from './EditOrder.module.css'
 
 function OrderCreate() {
-    const { setShowAlert, setAlertText, setAlertVariant } = useContext(AllContext)
+    const { setShowAlert, setAlertText, setAlertVariant, products } = useContext(AllContext)
     const [isLoading, setIsLoading] = useState(false)
     const route = useNavigate()
     const accessToken = localStorage.getItem('access_token')
-    const [products, setProducts] = useState('')
-    useEffect(() => {
-        fetch(`${fetchUrl}/api/products/?ordering=-id`)
-            .then(res => res.json())
-            .then(data => setProducts(data))
-    }, [])
+  
     const [inputValue, setInputvalue] = useState({
         name: '',
         phone: '',

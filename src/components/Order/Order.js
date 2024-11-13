@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState, useContext  } from 'react';
 import { Pagination } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,6 +9,9 @@ import styles from './Order.module.css'
 import SideNav from '../SideNav/SideNav';
 import { AllContext } from '../../AllContext';
 import BuklStatusUpdate from './BuklStatusUpdate/BuklStatusUpdate';
+
+
+
 
 function Order() {
     const [orders, setOrders] = useState([]);
@@ -87,7 +90,7 @@ function Order() {
         }, 400);
     }
     const [checkArr, setCheckArr] = useState([])
-    const handleChecked = (id,data, e) => {
+    const handleChecked = (id, data, e) => {
         if (e.target.checked) {
             const x = [...checkArr, id]
             setCheckArr(x)
@@ -124,6 +127,7 @@ function Order() {
 
     }
 
+
     return (
         <div>
             <div className='NavRow'>
@@ -153,6 +157,7 @@ function Order() {
                                 <div className={styles.cutomHeader}>Product</div>
                                 <div className={styles.cutomHeader}>Status</div>
                             </div>
+
                             <div>
                                 {
                                     realOrders && realOrders.map((data, index) =>
@@ -186,7 +191,6 @@ function Order() {
                     </div>
 
                     <div>
-
                         <div className={styles.pagination}>
                             <Pagination >
                                 <Pagination.First onClick={() => setCurrentPage(1)} />
