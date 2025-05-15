@@ -1,0 +1,13 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.search-barx {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 350px;
+    outline: none;
+    padding: 15px;
+}

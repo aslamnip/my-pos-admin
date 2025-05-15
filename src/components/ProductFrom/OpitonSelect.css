@@ -1,0 +1,32 @@
+.select-dropdown-container {
+    /* You can add container specific styling here if needed */
+  }
+  
+  .select-dropdown {
+    width: 200px; /* Adjust width as needed */
+    padding: 10px;
+    border: 1px solid #80ced7; /* Light blue border */
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* For Safari and Chrome */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    padding-right: 25px; /* Adjust padding to accommodate arrow */
+  }
+  
+  .select-dropdown:focus {
+    outline: none;
+    border-color: #4dd0e1; /* Slightly darker blue on focus */
+    box-shadow: 0 0 5px rgba(77, 208, 225, 0.5); /* Add a subtle focus shadow */
+  }
+  
+  /* Optional: Style the options within the select */
+  .select-dropdown option {
+    padding: 8px;
+  }

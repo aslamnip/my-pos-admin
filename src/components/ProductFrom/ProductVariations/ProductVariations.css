@@ -1,0 +1,92 @@
+.variation-container {
+    max-width: 900px;
+    padding: 20px 0;
+    font-family: sans-serif;
+  }
+  
+  .attribute-block {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px 15px 15px 0;
+    margin-bottom: 15px;
+  }
+  
+  .attribute-header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .attribute-header input {
+    flex: 1;
+    padding: 8px;
+    outline: none;
+    border:1px solid #0000003c;
+    border-radius: 5px;
+  }
+  
+  .attribute-value-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .attribute-value-row input {
+    flex: 1;
+    padding: 8px;
+    outline: none;
+    border:1px solid #0000003c;
+    border-radius: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+  
+  .add-btn {
+    margin-top: 5px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .variation-table {
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .variation-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .variation-header {
+    font-weight: bold;
+    background-color: #b2b2b240;
+    padding-left: 3px;
+  }
+  
+  .variation-row > div {
+    flex: 1;
+  }
+  
+  .variation-row input {
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    border:1px solid #0000003c;
+    border-radius: 5px;
+  }
+  
+
+  .varBtn{
+    padding: 10px 0;
+    border: 1px solid rgba(103, 102, 102, 0.422);
+    background: none;
+    width: 95%;
+}

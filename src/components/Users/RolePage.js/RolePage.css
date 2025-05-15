@@ -1,0 +1,12 @@
+.submitButtonx{
+    background: rgb(74, 131, 255);
+    outline: none;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 18px;
+    box-shadow: 0 0 10px 0 rgb(0, 15, 65);
+
+}

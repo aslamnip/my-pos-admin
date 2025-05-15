@@ -1,0 +1,176 @@
+/* Dropdown.css */
+
+.dropdown-container {
+    position: relative;
+    width: 300px;
+    font-family: sans-serif;
+}
+
+.dropdown-button {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px; /* Equivalent to px-4 py-2 */
+    border-radius: 4px; /* Equivalent to rounded-md */
+    border: 1px solid #d1d5db; /* Equivalent to border-gray-300 */
+    background-color: #fff; /* Equivalent to bg-white */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Equivalent to shadow-sm */
+    text-align: left;
+    transition-property: border-color, box-shadow;
+    transition-duration: 0.2s; /* Equivalent to duration-200 */
+}
+
+.dropdown-button:focus {
+    outline: none;
+    border-color: #3b82f6; /* Equivalent to focus:ring-blue-500 */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Equivalent to focus:ring-blue-500 with opacity */
+}
+
+.dropdown-button-placeholder {
+    color: #6b7280; /* Equivalent to text-gray-500 */
+}
+
+.dropdown-button-default {
+    color: #6b7280; /* Equivalent to text-gray-500 */
+}
+
+.dropdown-button-selected {
+    color: #111827; /* Equivalent to text-gray-900 */
+}
+
+.dropdown-button-error {
+    color: #dc2626; /* Equivalent to text-red-500 */
+    border-color: #dc2626; /* Equivalent to border-red-500 */
+}
+
+.dropdown-button-label {
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dropdown-button-clear {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 8px; /* Equivalent to ml-2 */
+    margin-right: 4px; /* Equivalent to mr-1 */
+    color: #6b7280; /* Equivalent to text-gray-500 */
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.dropdown-button-clear:hover {
+    color: #374151; /* Equivalent to hover:text-gray-700 */
+}
+
+.dropdown-button-clear-icon {
+    width: 16px; /* Approximate equivalent to w-4 */
+    height: 16px; /* Approximate equivalent to h-4 */
+}
+
+.dropdown-chevron {
+    width: 20px; /* Equivalent to w-5 */
+    height: 20px; /* Equivalent to h-5 */
+    margin-left: 8px; /* Equivalent to ml-2 */
+}
+
+.dropdown-list {
+    position: absolute;
+    z-index: 10;
+    margin-top: 4px; /* Equivalent to mt-1 */
+    width: 100%;
+    background-color: #fff; /* Equivalent to bg-white */
+    border-radius: 4px; /* Equivalent to rounded-md */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Approximate equivalent to shadow-lg */
+    border: 1px solid rgba(0, 0, 0, 0.05); /* Approximate equivalent to ring-1 ring-black ring-opacity-5 */
+    max-height: 240px; /* Equivalent to max-h-60 */
+    overflow-y: auto;
+}
+
+.dropdown-search-container {
+    padding: 8px; /* Equivalent to p-2 */
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Equivalent to bg-white */
+    z-index: 10;
+}
+
+.dropdown-search-input {
+    height: 32px; /* Equivalent to h-8 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    box-sizing: border-box;
+}
+
+.dropdown-no-options {
+    padding: 8px 16px; /* Equivalent to px-4 py-2 */
+    color: #6b7280; /* Equivalent to text-gray-500 */
+}
+
+.dropdown-list-item {
+    padding: 8px 16px; /* Equivalent to px-4 py-2 */
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-list-item:hover {
+    background-color: #f3f4f6; /* Equivalent to hover:bg-gray-100 */
+}
+
+.dropdown-list-item-default {
+    color: #374151; /* Equivalent to text-gray-700 */
+}
+
+.dropdown-list-item-selected {
+    background-color: #eff6ff; /* Equivalent to bg-blue-100 */
+    color: #2563eb; /* Equivalent to text-blue-900 */
+}
+
+.dropdown-list-item-selected-icon {
+    width: 20px; /* Equivalent to w-5 */
+    height: 20px; /* Equivalent to h-5 */
+    color: #3b82f6; /* Equivalent to text-blue-500 */
+}
+
+.dropdown-list-item-default-icon {
+    width: 20px; /* Equivalent to w-5 */
+    height: 20px; /* Equivalent to h-5 */
+    color: #d1d5db; /* Equivalent to text-gray-300 */
+}
+
+.dropdown-error-message {
+    color: #dc2626; /* Equivalent to text-red-500 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    margin-top: 4px; /* Equivalent to mt-1 */
+}
+
+/* Styles for the App component */
+.app-container {
+    min-height: 100vh; /* Equivalent to min-h-screen */
+    background-color: #f3f4f6; /* Equivalent to bg-gray-100 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; /* Equivalent to space-y-8 */
+}
+
+.app-heading {
+    font-size: 1.5rem; /* Approximate equivalent to text-2xl */
+    font-weight: bold; /* Equivalent to font-bold */
+    color: #374151; /* Equivalent to text-gray-800 */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
